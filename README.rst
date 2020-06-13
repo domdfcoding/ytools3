@@ -8,7 +8,7 @@ ytools3
 
 .. end short_desc
 
-This is a port of ``ytools`` (https://github.com/yaccob/ytools ), which was Python 2 only, to Python 3.
+This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Python 2 only, to Python 3.
 
 .. start shields 
 
@@ -86,14 +86,23 @@ Features
 ---------
 
 * Output ``yaml`` as ``json`` or ``python``
+
 * Output ``json`` as ``yaml`` or ``python`` (provided that there are no duplicate mapping entry in the ``json`` source)
+
 * Extract particular nodes from ``yaml`` and ``json`` files.
+
 	+ If ``yaml`` is used as output format (default) the output is a valid ``yaml`` document.
+
 * Validate ``yaml`` and ``json`` documents.
+
 	+ The ``json-schema`` can be provided in ``yaml`` format as well, which improves readability and writability.
+
 * Preserve order of mapping-keys in ``yaml`` and ``json`` output.
+
 * Multi-document support
+
 	+ Multiple input files
+
 		- ... as well as multiple ``yaml`` documents within a file
 		- ... and a combination of both
 

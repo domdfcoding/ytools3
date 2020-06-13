@@ -73,9 +73,9 @@ Find more information at https://github.com/yaccob/ytools
 
 	try:
 		if args.schema:
-			validate(args.schema, datafiles, encoding=args.encoding)
+			validate(args.schema, args.datafile, encoding=args.encoding)
 		del (args.__dict__["schema"])
-		dump(datafiles, **opts.__dict__)
+		dump(args.datafile, **args.__dict__)
 
 	except jsonschema.exceptions.ValidationError as e:
 		sys.stderr.write(f"{e.path}: {e.message}\n")

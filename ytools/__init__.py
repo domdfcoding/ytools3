@@ -79,7 +79,16 @@ def validate(
 		schemafile: Union[str, pathlib.Path],
 		datafiles: Iterable[Union[str, pathlib.Path]],
 		encoding: str = 'utf-8',
-		):
+		) -> None:
+	"""
+	Validate the given datafiles using a schema
+
+	:param schemafile: The ``json`` or ``yaml`` formatted schema to validate with
+	:param datafiles: An iterable of ``json`` or ``yaml`` files to validate
+	:param encoding: Encoding to open the files with.
+	:type encoding: str
+	"""
+
 	schemafile = pathlib.Path(schemafile)
 
 	schema = yaml.load(schemafile.read_text(encoding=encoding), Loader=yaml.FullLoader)
@@ -103,7 +112,22 @@ def dump(
 		yaml_options: str = optiondefaults['yaml'],
 		json_options: str = optiondefaults['json'],
 		encoding: str = 'utf-8',
-		):
+		) -> None:
+	"""
+
+	:param datafile:
+	:type datafile:
+	:param path:
+	:type path:
+	:param format:
+	:type format:
+	:param yaml_options:
+	:type yaml_options:
+	:param json_options:
+	:type json_options:
+	:param encoding: Encoding to open the files with.
+	:type encoding: str
+	"""
 
 	encoders: Dict[str, Encoder] = {
 			"yaml": {
