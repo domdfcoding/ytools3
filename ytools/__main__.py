@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 # stdlib
+import argparse
 import optparse
 import pathlib
 import sys
-import argparse
 
 # 3rd party
-import jsonschema
+import jsonschema  # type: ignore
 import yaml
 from yaml import scanner
 
@@ -19,8 +18,6 @@ from ytools import __version__, dump, optiondefaults, validate
 def main(argv):
 	parser = argparse.ArgumentParser(
 			prog=argv[0],
-			# usage='Usage: %prog [OPTION] -p JSONPATH_EXPRESSION FILE...',
-			# version='%s %s' % ("%prog", __version__),
 			description="""\
 Dumps data from json (or yaml) documents in yaml format.
 Command line wrapper for jsonpath-ng.
@@ -28,6 +25,8 @@ Find more information at https://github.com/yaccob/ytools
 """,
 			formatter_class=argparse.ArgumentDefaultsHelpFormatter,
 			)
+	# usage='Usage: %prog [OPTION] -p JSONPATH_EXPRESSION FILE...',
+	# version='%s %s' % ("%prog", __version__),
 
 	parser.add_argument('datafile', type=pathlib.Path, nargs=1, metavar="FILE")
 	parser.add_argument(

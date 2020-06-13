@@ -1,37 +1,34 @@
-import setuptools
-import pathlib
+#!/usr/bin/env python
+# This file is managed by `git_helper`. Don't edit it directly
+"""Setup script"""
 
-version = "1.0.0"
+# 3rd party
+from setuptools import find_packages, setup
 
-setuptools.setup(
-		name="ytools",
-		packages=["ytools"],
-		# data_files = [('schema', ['schema/transformatorschema.yaml'])],
-		install_requires=pathlib.Path('requirements.txt').absolute().read_text().split("\n"),
-		version="1.0.0",
-		description=(
-				'Command-line tool for selectively dumping nodes from '
-				'`yaml` (or `json`) documents in `yaml` or `json` format.'
-				),
-		long_description=pathlib.Path('README.md').read_text(),
-		long_description_content_type="text/markdown",
-		author='Jakob Stemberger',
-		author_email='yaccob@gmx.net',
-		license='Apache 2.0',
-		url=f'https://github.com/yaccob/ytools',
-		download_url=f'https://github.com/yaccob/ytools/archive/{version}.tar.gz',
-		keywords=[
-				'yaml',
-				'json',
-				'transform',
-				'xslt',
-				'jsonpath',
-				'json-path',
-				'dump',
-				'convert',
-				'validate',
-				'schema',
-				],
-		classifiers=['Programming Language :: Python :: 2.7'],
-		entry_points={"console_scripts": ['ytools = ytools.__main__:main']},
+# this package
+from __pkginfo__ import *  # pylint: disable=wildcard-import
+
+
+
+setup(
+		author=author,
+		author_email=author_email,
+		classifiers=classifiers,
+		description=short_desc,
+		entry_points=entry_points,
+		extras_require=extras_require,
+		include_package_data=True,
+		install_requires=install_requires,
+		license=__license__,
+		long_description=long_description,
+		name=pypi_name,
+		packages=find_packages(exclude=("tests", "doc-source")),
+		project_urls=project_urls,
+		py_modules=py_modules,
+		python_requires=">=3.6",
+		url=web,
+		version=__version__,
+		keywords=keywords,
+		zip_safe=False,
+
 		)

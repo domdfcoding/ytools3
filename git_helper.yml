@@ -1,0 +1,50 @@
+modname: ytools3
+pypi_name: ytools3
+import_name: ytools
+copyright_years: "2020"
+author: "Dominic Davis-Foster"
+email: "dominic@davis-foster.co.uk"
+version: "3.0.0"
+username: "domdfcoding"
+license: 'Apache 2.0'
+short_desc: 'Library for validating `yaml` files against schema and selectively dumping nodes from
+`yaml` (or `json`) documents in `yaml` or `json` format.'
+
+enable_conda: False
+
+console_scripts:
+  - "ytools = ytools.__main__:main"
+
+python_deploy_version: 3.6
+
+# Versions to run tests for
+python_versions:
+  - '3.6'
+  - '3.7'
+  - '3.8'
+  - '3.9-dev'
+  - 'pypy3'
+
+# travis secure password for PyPI
+#travis_pypi_secure:
+
+classifiers:
+  - 'Development Status :: 4 - Beta'
+#  - "Development Status :: 5 - Production/Stable"
+#  - "Development Status :: 6 - Mature"
+#  - "Development Status :: 7 - Inactive"
+  - 'Intended Audience :: Developers'
+  - 'Operating System :: OS Independent'
+  - 'Topic :: Utilities'
+
+keywords:
+  - yaml
+  - json
+  - transform
+  - xslt
+  - jsonpath
+  - json-path
+  - dump
+  - convert
+  - validate
+  - schema
