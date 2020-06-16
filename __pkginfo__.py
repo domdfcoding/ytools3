@@ -91,4 +91,4 @@ classifiers = [
 
 		]
 
-keywords = "yaml json transform xslt jsonpath json-path dump convert validate schema"
+keywords = "yaml json transform xslt jsonpath json-path dump convert validate schema validation utility"

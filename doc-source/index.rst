@@ -37,7 +37,7 @@ This is a port of ``ytools`` (https://github.com/yaccob/ytools ), which was Pyth
 	:target: https://requires.io/github/domdfcoding/ytools3/requirements/?branch=master
 	:alt: Requirements Status
 
-.. |coveralls| image:: https://shields.io/coveralls/github/domdfcoding/ytools3/master?logo=coveralls
+.. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/ytools3/master?logo=coveralls
 	:target: https://coveralls.io/github/domdfcoding/ytools3?branch=master
 	:alt: Coverage
 
