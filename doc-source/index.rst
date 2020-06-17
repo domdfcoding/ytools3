@@ -17,7 +17,7 @@ This is a port of ``ytools`` (https://github.com/yaccob/ytools ), which was Pyth
 	:widths: 10 90
 
 	* - Docs
-	  - |docs|
+	  - |docs| |docs_check|
 	* - Tests
 	  - |travis| |actions_windows| |actions_macos|
 	    |coveralls| |codefactor|
@@ -31,6 +31,10 @@ This is a port of ``ytools`` (https://github.com/yaccob/ytools ), which was Pyth
 .. |docs| image:: https://img.shields.io/readthedocs/ytools3/latest?logo=read-the-docs
 	:target: https://ytools3.readthedocs.io/en/latest/?badge=latest
 	:alt: Documentation Status
+	
+.. |docs| image:: [Docs Check](https://github.com/domdfcoding/ytools3/workflows/Docs%20Check/badge.svg
+	:target: https://github.com/domdfcoding/ytools3/actions?query=workflow%3A%22Docs+Check%22
+	:alt: Docs Check Status
 
 .. |travis| image:: https://img.shields.io/travis/com/domdfcoding/ytools3/master?logo=travis
 	:target: https://travis-ci.com/domdfcoding/ytools3
