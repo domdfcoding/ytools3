@@ -28,44 +28,44 @@ Find more information at https://github.com/yaccob/ytools
 	# usage='Usage: %prog [OPTION] -p JSONPATH_EXPRESSION FILE...',
 	# version='%s %s' % ("%prog", __version__),
 
-	parser.add_argument('datafile', type=pathlib.Path, nargs=1, metavar="FILE")
+	parser.add_argument("datafile", type=pathlib.Path, nargs=1, metavar="FILE")
 	parser.add_argument(
-			'-p',
-			'--json-path',
-			dest='path',
+			"-p",
+			"--json-path",
+			dest="path",
 			default='$',
 			help="Syntax for jsonpath expression: https://pypi.python.org/pypi/jsonpath-ng/1.4.2"
 			)
 	parser.add_argument(
-			'-f',
-			'--output-format',
-			metavar='OUTPUTFORMAT',
-			dest='format',
-			choices=['yaml', 'json', 'python'],
-			default='yaml',
+			"-f",
+			"--output-format",
+			metavar="OUTPUTFORMAT",
+			dest="format",
+			choices={"yaml", "json", "python"},
+			default="yaml",
 			help='Output format. Can be "yaml", "json" or "python". '  # [default: %default]
 			)
 	parser.add_argument(
-			'-y',
-			'--yaml-options',
-			dest='yaml_options',
-			default=optiondefaults['yaml'],
+			"-y",
+			"--yaml-options",
+			dest="yaml_options",
+			default=optiondefaults["yaml"],
 			help="kwargs for yaml.dump (pyYaml) as yaml.mapping (for experts). "  # [default: '%default']
 			)
 	parser.add_argument(
-			'-j',
-			'--json-options',
-			dest='json_options',
-			default=optiondefaults['json'],
+			"-j",
+			"--json-options",
+			dest="json_options",
+			default=optiondefaults["json"],
 			help="kwargs for json.dumps as yaml.mapping (for experts). "  # [default: '%default']
 			)
 	parser.add_argument(
-			'-v', '--validate', metavar='SCHEMA', dest='schema', help="Validate documents against json-schema"
+			"-v", "--validate", metavar="SCHEMA", dest="schema", help="Validate documents against json-schema"
 			)
 	parser.add_argument(
-			'--encoding',
-			dest='encoding',
-			default='utf-8',
+			"--encoding",
+			dest="encoding",
+			default="utf-8",
 			help="Set encoding of input documents (if different from utf-8)"
 			)
 
@@ -87,5 +87,5 @@ Find more information at https://github.com/yaccob/ytools
 		sys.stderr.write(f"{e}\n")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 	main(sys.argv)

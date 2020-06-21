@@ -63,7 +63,7 @@ class Encoder(TypedDict):
 def validate(
 		schemafile: Union[str, pathlib.Path],
 		datafiles: Iterable[Union[str, pathlib.Path]],
-		encoding: str = 'utf-8',
+		encoding: str = "utf-8",
 		) -> None:
 	"""
 	Validate the given datafiles using a schema
@@ -93,10 +93,10 @@ def validate(
 def dump(
 		datafile: Union[str, pathlib.Path],
 		path: str = '$',
-		format: str = 'yaml',
-		yaml_options: str = optiondefaults['yaml'],
-		json_options: str = optiondefaults['json'],
-		encoding: str = 'utf-8',
+		format: str = "yaml",
+		yaml_options: str = optiondefaults["yaml"],
+		json_options: str = optiondefaults["json"],
+		encoding: str = "utf-8",
 		) -> None:
 	"""
 
@@ -127,7 +127,7 @@ def dump(
 					},
 			"python": {
 					"dumper": (lambda x, **kwargs: x),
-					"kwargs": '{}',
+					"kwargs": "{}",
 					"yaml_constructor": dict_constructor,
 					},
 			}
@@ -135,7 +135,7 @@ def dump(
 	yaml.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, encoders[format]["yaml_constructor"])
 
 	if format == "json":
-		yaml.add_constructor('tag:yaml.org,2002:timestamp', yaml.constructor.SafeConstructor.construct_yaml_str)
+		yaml.add_constructor("tag:yaml.org,2002:timestamp", yaml.constructor.SafeConstructor.construct_yaml_str)
 
 	yaml.add_representer(collections.OrderedDict, lambda dumper, data: dumper.represent_dict(data.items()))
 
