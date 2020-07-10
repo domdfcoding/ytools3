@@ -3,4 +3,4 @@ include LICENSE
 include requirements.txt
 recursive-exclude **/__pycache__ *
 recursive-include ytools/ *.pyi
-recursive-include ytools/ py.typed
+include ytools/py.typed

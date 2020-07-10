@@ -10,7 +10,7 @@ ytools3
 
 This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Python 2 only, to Python 3.
 
-.. start shields 
+.. start shields
 
 .. list-table::
 	:stub-columns: 1
@@ -30,7 +30,7 @@ This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Pyt
 .. |docs| image:: https://img.shields.io/readthedocs/ytools3/latest?logo=read-the-docs
 	:target: https://ytools3.readthedocs.io/en/latest/?badge=latest
 	:alt: Documentation Status
-	
+
 .. |docs_check| image:: https://github.com/domdfcoding/ytools3/workflows/Docs%20Check/badge.svg
 	:target: https://github.com/domdfcoding/ytools3/actions?query=workflow%3A%22Docs+Check%22
 	:alt: Docs Check Status
@@ -63,7 +63,7 @@ This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Pyt
 	:target: https://pypi.org/project/ytools3/
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/ytools3
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/ytools3?logo=python&logoColor=white
 	:target: https://pypi.org/project/ytools3/
 	:alt: PyPI - Supported Python Versions
 
@@ -76,8 +76,8 @@ This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Pyt
 	:alt: PyPI - Wheel
 
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/ytools3
-	:alt: License
 	:target: https://github.com/domdfcoding/ytools3/blob/master/LICENSE
+	:alt: License
 
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/ytools3
 	:alt: GitHub top language
