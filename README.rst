@@ -25,7 +25,7 @@ This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Pyt
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained|
 	* - Other
-	  - |license| |language| |requires|
+	  - |license| |language| |requires| |pre_commit|
 
 .. |docs| image:: https://img.shields.io/readthedocs/ytools3/latest?logo=read-the-docs
 	:target: https://ytools3.readthedocs.io/en/latest/?badge=latest
@@ -92,6 +92,10 @@ This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Pyt
 
 .. |maintained| image:: https://img.shields.io/maintenance/yes/2020
 	:alt: Maintenance
+
+.. |pre_commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+	:target: https://github.com/pre-commit/pre-commit
+	:alt: pre-commit
 
 .. end shields
 

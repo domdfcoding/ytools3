@@ -50,7 +50,7 @@ pypi_name = "ytools3"
 import_name = "ytools"
 py_modules = []
 entry_points = {
-		"console_scripts": ['ytools = ytools.__main__:main']
+		"console_scripts": ['ytools = ytools.__main__:main'],
 		}
 
 __license__ = "Apache2.0"
