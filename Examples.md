@@ -1,17 +1,17 @@
 # Examples
 
-For selecting nodes, `ytools` uses `jsonpath_ng.ext`.  
+For selecting nodes, `ytools` uses `jsonpath_ng.ext`.
 The syntax is documented at https://pypi.python.org/pypi/jsonpath-ng/1.4.2.
 
-By default (if no path is provided), complete input documents are dumped in `yaml` format (path defaults to `'$'`).  
+By default (if no path is provided), complete input documents are dumped in `yaml` format (path defaults to `'$'`).
 This can be used to get `yaml` output for `json` documents or vice versa:
-- `python ytools.py input.json`  
-  ... for converting json to yaml, or ...  
-- `python ytools.py input.yaml -f json`  
+- `python ytools.py input.json`
+  ... for converting json to yaml, or ...
+- `python ytools.py input.yaml -f json`
   ... for the opposite direction.
 
 
-Additionally, `yaml` and `json` documents can be validated against a `json-schema` which may be provided in `yaml` or `json` format.  
+Additionally, `yaml` and `json` documents can be validated against a `json-schema` which may be provided in `yaml` or `json` format.
 `schema.yaml` is a sample for `json-schema` in `yaml` format.
 
 `ytools -h`
