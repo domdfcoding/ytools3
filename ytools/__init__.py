@@ -76,7 +76,7 @@ def validate(
 
 	schemafile = pathlib.Path(schemafile)
 
-	schema = yaml.load(schemafile.read_text(encoding=encoding), Loader=yaml.FullLoader)
+	schema = yaml.safe_load(schemafile.read_text(encoding=encoding), Loader=yaml.FullLoader)
 
 	for filename in datafiles:
 		for document in yaml.load_all(
@@ -93,7 +93,7 @@ def validate(
 def dump(
 		datafile: Union[str, pathlib.Path],
 		path: str = '$',
-		format: str = "yaml",
+		format: str = "yaml",  # pylint: disable=redefined-builtin
 		yaml_options: str = optiondefaults["yaml"],
 		json_options: str = optiondefaults["json"],
 		encoding: str = "utf-8",
@@ -145,8 +145,8 @@ def dump(
 			)
 
 	formatoptions = dict(
-			yaml.load(optiondefaults[format], Loader=yaml.FullLoader),
-			**yaml.load(encoders[format]["kwargs"], Loader=yaml.FullLoader)
+			yaml.safe_load(optiondefaults[format], Loader=yaml.FullLoader),
+			**yaml.safe_load(encoders[format]["kwargs"], Loader=yaml.FullLoader)
 			)
 
 	for document in documents:
