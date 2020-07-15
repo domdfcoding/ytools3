@@ -11,13 +11,6 @@ Library for validating `yaml` files against schema and selectively dumping nodes
 #  See LICENSE for more information
 #
 
-__author__ = "Dominic Davis-Foster"
-__copyright__ = "2020 Dominic Davis-Foster"
-
-__license__ = "Apache2.0"
-__version__ = "3.0.0"
-__email__ = "dominic@davis-foster.co.uk"
-
 # stdlib
 import collections
 import json
@@ -30,6 +23,13 @@ import yaml
 from jsonpath_ng import ext as jsonpath  # type: ignore
 from typing_extensions import TypedDict
 from yaml import constructor, resolver
+
+__author__: str = "Dominic Davis-Foster"
+__copyright__: str = "2020 Dominic Davis-Foster"
+
+__license__: str = "Apache2.0"
+__version__: str = "3.0.0"
+__email__: str = "dominic@davis-foster.co.uk"
 
 __all__ = ["validate", "dump", "optiondefaults", "__version__"]
 
