@@ -4,7 +4,7 @@ import_name: ytools
 copyright_years: "2020"
 author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"
-version: "3.0.0"
+version: "3.0.1"
 username: "domdfcoding"
 license: 'Apache 2.0'
 short_desc: 'Library for validating `yaml` files against schema and selectively dumping nodes from

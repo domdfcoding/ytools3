@@ -39,7 +39,7 @@ __copyright__ = """
 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 """
 
-__version__ = "3.0.0"
+__version__ = "3.0.1"
 modname = "ytools3"
 pypi_name = "ytools3"
 import_name = "ytools"

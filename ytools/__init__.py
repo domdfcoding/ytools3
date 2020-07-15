@@ -28,7 +28,7 @@ __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2020 Dominic Davis-Foster"
 
 __license__: str = "Apache2.0"
-__version__: str = "3.0.0"
+__version__: str = "3.0.1"
 __email__: str = "dominic@davis-foster.co.uk"
 
 __all__ = ["validate", "dump", "optiondefaults", "__version__"]

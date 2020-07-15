@@ -82,7 +82,7 @@ This is a port of ``ytools`` (https://github.com/yaccob/ytools ), which was Pyth
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/ytools3
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/ytools3/v3.0.0
+.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/ytools3/v3.0.1
 	:target: https://github.com/domdfcoding/ytools3/pulse
 	:alt: GitHub commits since tagged version
 
