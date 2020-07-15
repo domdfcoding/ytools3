@@ -76,7 +76,7 @@ def validate(
 
 	schemafile = pathlib.Path(schemafile)
 
-	schema = yaml.safe_load(schemafile.read_text(encoding=encoding), Loader=yaml.FullLoader)
+	schema = yaml.safe_load(schemafile.read_text(encoding=encoding))
 
 	for filename in datafiles:
 		for document in yaml.load_all(
@@ -144,10 +144,7 @@ def dump(
 			Loader=yaml.FullLoader,
 			)
 
-	formatoptions = dict(
-			yaml.safe_load(optiondefaults[format], Loader=yaml.FullLoader),
-			**yaml.safe_load(encoders[format]["kwargs"], Loader=yaml.FullLoader)
-			)
+	formatoptions = dict(yaml.safe_load(optiondefaults[format]), **yaml.safe_load(encoders[format]["kwargs"]))
 
 	for document in documents:
 		for match in jsonpath.parse(path).find(document):
