@@ -15,7 +15,7 @@ from __pkginfo__ import *  # pylint: disable=wildcard-import
 
 
 setup(
-		description="Library for validating `yaml` files against schema and selectively dumping nodes from `yaml` (or `json`) documents in `yaml` or `json` format.",
+		description='Library for validating `yaml` files against schema and selectively dumping nodes from `yaml` (or `json`) documents in `yaml` or `json` format.',
 		extras_require=extras_require,
 		install_requires=install_requires,
 		py_modules=[],

@@ -44,9 +44,9 @@ modname = "ytools3"
 pypi_name = "ytools3"
 import_name = "ytools"
 __license__ = "Apache2.0"
-short_desc = "Library for validating `yaml` files against schema and selectively dumping nodes from `yaml` (or `json`) documents in `yaml` or `json` format."
-__author__ = author = "Dominic Davis-Foster"
-author_email = "dominic@davis-foster.co.uk"
+short_desc = 'Library for validating `yaml` files against schema and selectively dumping nodes from `yaml` (or `json`) documents in `yaml` or `json` format.'
+__author__ = author = 'Dominic Davis-Foster'
+author_email = 'dominic@davis-foster.co.uk'
 github_username = "domdfcoding"
 web = github_url = "https://github.com/domdfcoding/ytools3"
 repo_root = pathlib.Path(__file__).parent
