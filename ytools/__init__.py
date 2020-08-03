@@ -2,7 +2,8 @@
 #
 #  __init__.py
 """
-Library for validating `yaml` files against schema and selectively dumping nodes from `yaml` (or `json`) documents in `yaml` or `json` format.
+Library for validating ``yaml`` files against schema
+and selectively dumping nodes from ``yaml`` (or ``json``) documents in ``yaml`` or ``json`` format.
 """
 #
 #  Copyright (c) 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -33,19 +34,39 @@ __email__: str = "dominic@davis-foster.co.uk"
 
 __all__ = ["validate", "dump", "optiondefaults", "__version__"]
 
-optiondefaults = {
+optiondefaults: Dict[str, str] = {
 		"yaml": "{explicit_start: True, explicit_end: True, allow_unicode: True}",
 		"json": "{indent: 2, encoding: utf-8}",
 		"python": "{}"
 		}
 
 
-def dict_constructor(loader, node) -> Dict:
+def dict_constructor(loader: yaml.constructor.SafeConstructor, node) -> Dict:
+	"""
+
+	:param loader:
+	:param node:
+	:type node:
+
+	:return:
+	"""
+
 	return dict(loader.construct_pairs(node))
 
 
-def orderedDict_constructor(loader, node, deep=False):
-	data = collections.OrderedDict()
+def orderedDict_constructor(loader: yaml.constructor.SafeConstructor, node, deep: bool = False):
+	"""
+
+	:param loader:
+	:param node:
+	:type node:
+	:param deep:
+
+	:return:
+	:rtype:
+	"""
+
+	data: Dict = collections.OrderedDict()
 	yield data
 
 	if isinstance(node, yaml.MappingNode):
