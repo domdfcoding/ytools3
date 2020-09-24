@@ -8,7 +8,7 @@ ytools3
 
 .. end short_desc
 
-This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Python 2 only, to Python 3.
+This is a port of the Python 2-only ``ytools`` ( https://github.com/yaccob/ytools ) to Python 3.
 
 .. start shields
 
