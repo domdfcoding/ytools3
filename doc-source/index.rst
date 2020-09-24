@@ -150,8 +150,14 @@ Installation
 	:caption: Documentation
 
 	API Reference<docs>
+
+.. toctree::
+	:maxdepth: 3
+	:caption: Contributing
+
+	contributing
 	Source
-	Building
+
 
 .. start links
 
