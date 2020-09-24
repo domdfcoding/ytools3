@@ -27,74 +27,75 @@ This is a port of ``ytools`` (https://github.com/yaccob/ytools ), which was Pyth
 	* - Other
 	  - |license| |language| |requires| |pre_commit|
 
-.. |docs| image:: https://img.shields.io/readthedocs/ytools3/latest?logo=read-the-docs
-	:target: https://ytools3.readthedocs.io/en/latest/?badge=latest
-	:alt: Documentation Status
+.. |docs| rtfd-shield::
+	:project: ytools3
+	:alt: Documentation Build Status
 
-.. |docs_check| image:: https://github.com/domdfcoding/ytools3/workflows/Docs%20Check/badge.svg
-	:target: https://github.com/domdfcoding/ytools3/actions?query=workflow%3A%22Docs+Check%22
+.. |docs_check| actions-shield::
+	:workflow: Docs Check
 	:alt: Docs Check Status
 
-.. |travis| image:: https://img.shields.io/travis/com/domdfcoding/ytools3/master?logo=travis
-	:target: https://travis-ci.com/domdfcoding/ytools3
+.. |travis| travis-shield::
+	:travis-site: com
 	:alt: Travis Build Status
 
-.. |actions_windows| image:: https://github.com/domdfcoding/ytools3/workflows/Windows%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/ytools3/actions?query=workflow%3A%22Windows+Tests%22
+.. |actions_windows| actions-shield::
+	:workflow: Windows Tests
 	:alt: Windows Tests Status
 
-.. |actions_macos| image:: https://github.com/domdfcoding/ytools3/workflows/macOS%20Tests/badge.svg
-	:target: https://github.com/domdfcoding/ytools3/actions?query=workflow%3A%22macOS+Tests%22
+.. |actions_macos| actions-shield::
+	:workflow: macOS Tests
 	:alt: macOS Tests Status
 
-.. |requires| image:: https://requires.io/github/domdfcoding/ytools3/requirements.svg?branch=master
-	:target: https://requires.io/github/domdfcoding/ytools3/requirements/?branch=master
+.. |requires| requires-io-shield::
 	:alt: Requirements Status
 
-.. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/ytools3/master?logo=coveralls
-	:target: https://coveralls.io/github/domdfcoding/ytools3?branch=master
+.. |coveralls| coveralls-shield::
 	:alt: Coverage
 
-.. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/ytools3?logo=codefactor
-	:target: https://www.codefactor.io/repository/github/domdfcoding/ytools3
+.. |codefactor| codefactor-shield::
 	:alt: CodeFactor Grade
 
-.. |pypi-version| image:: https://img.shields.io/pypi/v/ytools3
-	:target: https://pypi.org/project/ytools3/
+.. |pypi-version| pypi-shield::
+	:project: ytools3
+	:version:
 	:alt: PyPI - Package Version
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/ytools3?logo=python&logoColor=white
-	:target: https://pypi.org/project/ytools3/
+.. |supported-versions| pypi-shield::
+	:project: ytools3
+	:py-versions:
 	:alt: PyPI - Supported Python Versions
 
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/ytools3
-	:target: https://pypi.org/project/ytools3/
+.. |supported-implementations| pypi-shield::
+	:project: ytools3
+	:implementations:
 	:alt: PyPI - Supported Implementations
 
-.. |wheel| image:: https://img.shields.io/pypi/wheel/ytools3
-	:target: https://pypi.org/project/ytools3/
+.. |wheel| pypi-shield::
+	:project: ytools3
+	:wheel:
 	:alt: PyPI - Wheel
 
-.. |license| image:: https://img.shields.io/github/license/domdfcoding/ytools3
-	:target: https://github.com/domdfcoding/ytools3/blob/master/LICENSE
+.. |license| github-shield::
+	:license:
 	:alt: License
 
-.. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/ytools3
+.. |language| github-shield::
+	:top-language:
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/ytools3/v3.0.1
-	:target: https://github.com/domdfcoding/ytools3/pulse
+.. |commits-since| github-shield::
+	:commits-since: v3.0.1
 	:alt: GitHub commits since tagged version
 
-.. |commits-latest| image:: https://img.shields.io/github/last-commit/domdfcoding/ytools3
-	:target: https://github.com/domdfcoding/ytools3/commit/master
+.. |commits-latest| github-shield::
+	:last-commit:
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2020
+.. |maintained| maintained-shield:: 2020
 	:alt: Maintenance
 
-.. |pre_commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
-	:target: https://github.com/pre-commit/pre-commit
+.. |pre_commit| pre-commit-shield::
 	:alt: pre-commit
 
 .. end shields
@@ -133,20 +134,9 @@ Installation
 
 .. start installation
 
-.. tabs::
-
-	.. tab:: from PyPI
-
-		.. prompt:: bash
-
-			python3 -m pip install ytools3 --user
-
-
-	.. tab:: from GitHub
-
-		.. prompt:: bash
-
-			python3 -m pip install git+https://github.com/domdfcoding/ytools3@master --user
+.. installation:: ytools3
+	:pypi:
+	:github:
 
 .. end installation
 

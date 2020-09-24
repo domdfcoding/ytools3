@@ -29,7 +29,7 @@ This is a port of ``ytools`` ( https://github.com/yaccob/ytools ), which was Pyt
 
 .. |docs| image:: https://img.shields.io/readthedocs/ytools3/latest?logo=read-the-docs
 	:target: https://ytools3.readthedocs.io/en/latest/?badge=latest
-	:alt: Documentation Status
+	:alt: Documentation Build Status
 
 .. |docs_check| image:: https://github.com/domdfcoding/ytools3/workflows/Docs%20Check/badge.svg
 	:target: https://github.com/domdfcoding/ytools3/actions?query=workflow%3A%22Docs+Check%22
