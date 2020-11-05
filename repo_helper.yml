@@ -1,3 +1,4 @@
+---
 modname: ytools3
 pypi_name: ytools3
 import_name: ytools
@@ -7,46 +8,43 @@ email: "dominic@davis-foster.co.uk"
 version: "3.0.1"
 username: "domdfcoding"
 license: 'Apache 2.0'
-short_desc: 'Library for validating `yaml` files against schema and selectively dumping nodes from
-`yaml` (or `json`) documents in `yaml` or `json` format.'
+short_desc: 'Library for validating `yaml` files against schema and selectively dumping nodes from `yaml` (or `json`) documents in `yaml` or `json` format.'
 
-enable_conda: False
+enable_conda: false
 
 console_scripts:
-  - "ytools = ytools.__main__:main"
+ - "ytools = ytools.__main__:main"
 
 python_deploy_version: 3.6
 
 # Versions to run tests for
 python_versions:
-  - '3.6'
-  - '3.7'
-  - '3.8'
-  - '3.9-dev'
-  - 'pypy3'
+ - '3.6'
+ - '3.7'
+ - '3.8'
+ - '3.9'
+ - 'pypy3'
 
 # travis secure password for PyPI
 travis_pypi_secure: "H3di2VGPs85E/LHi6031L0eo7BEGs9a36qFEuwOvp0kw2f8ld4zTsu6omgcwg/ea9ljJ401oxgsLp8YkiaXm5W/yDjr2BLWKSHpInCx/4My0r/Wfsvn0SjrzUsjUElGtXZsh5BJbHD1q0ZjXyfeFUDnlX+2IBlS5oDHo7qVUqAP5PJd3zdgo0JMx6sQ91HpQDAZTq7p/pYIF4fhTcoMFtUQkwiGYwERaIRDymsMQKonvk02Rnd0OJI5IhMctis8PvV+jTM7WW/e1V+ggQ1Z1mPqzDtQ+aOaWvCCdK9KiLeZLbfz3Q6Ai0M1wDl2hEjTASPZpGIKs6/W6kYRLN7WTfK4efNTsPjZalbQkPQAv6ylIrOW6C83erGv8qVycuEzjHF9pvdU9ka35Gru24qtLLEkYVsB49zvR6B6gvURS8C9+cNeCfJcrfRvco8w3xofNaSPUsk5+NO7IvORrurMjW2T5Syrqdu3d9vUG8tniNyVz/kMTqg9s7AHEb6XHOkzpPZkmDRhAgfHhTLoSxUR4jF69Kx2xJ7WwndSoA6RIah8P9GeajsxCF0G9gRL10vK8a8meO2uCp2S60Xap7Ri/eNJnPSGn/BtRcLK8IhMixF0G2G9AJ6vkLs8is4NXl/9+VWrl0EL7hak9AY0gvHiOtHNiLhLmMACB+MbbulZB+24="
 
 classifiers:
-  - 'Development Status :: 4 - Beta'
-#  - "Development Status :: 5 - Production/Stable"
-#  - "Development Status :: 6 - Mature"
-#  - "Development Status :: 7 - Inactive"
-  - 'Intended Audience :: Developers'
-  - 'Operating System :: OS Independent'
-  - 'Topic :: Utilities'
+ - 'Development Status :: 4 - Beta'
+ - 'Intended Audience :: Developers'
+ - 'Operating System :: OS Independent'
+ - 'Topic :: Software Development :: Libraries :: Python Modules'
+ - 'Topic :: Utilities'
 
 keywords:
-  - yaml
-  - json
-  - transform
-  - xslt
-  - jsonpath
-  - json-path
-  - dump
-  - convert
-  - validate
-  - schema
-  - validation
-  - utility
+ - yaml
+ - json
+ - transform
+ - xslt
+ - jsonpath
+ - json-path
+ - dump
+ - convert
+ - validate
+ - schema
+ - validation
+ - utility
