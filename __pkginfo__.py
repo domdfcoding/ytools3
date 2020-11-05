@@ -17,22 +17,9 @@ import pathlib
 __all__ = [
 		"__copyright__",
 		"__version__",
-		"modname",
-		"pypi_name",
-		"__license__",
-		"__author__",
-		"short_desc",
-		"author",
-		"author_email",
-		"github_username",
-		"web",
-		"github_url",
 		"repo_root",
 		"install_requires",
 		"extras_require",
-		"project_urls",
-
-		"import_name",
 		]
 
 __copyright__ = """
@@ -40,23 +27,7 @@ __copyright__ = """
 """
 
 __version__ = "3.0.1"
-modname = "ytools3"
-pypi_name = "ytools3"
-import_name = "ytools"
-__license__ = "Apache2.0"
-short_desc = 'Library for validating `yaml` files against schema and selectively dumping nodes from `yaml` (or `json`) documents in `yaml` or `json` format.'
-__author__ = author = 'Dominic Davis-Foster'
-author_email = 'dominic@davis-foster.co.uk'
-github_username = "domdfcoding"
-web = github_url = "https://github.com/domdfcoding/ytools3"
+
 repo_root = pathlib.Path(__file__).parent
 install_requires = (repo_root / "requirements.txt").read_text(encoding="utf-8").split('\n')
 extras_require = {'all': []}
-
-
-
-project_urls = {
-		"Documentation": "https://ytools3.readthedocs.io",
-		"Issue Tracker": f"{github_url}/issues",
-		"Source Code": github_url,
-		}
