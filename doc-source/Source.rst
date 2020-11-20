@@ -3,7 +3,7 @@ Downloading source code
 =========================
 
 The ``ytools3`` source code is available on GitHub,
-and can be accessed from the following URL: https://github.com/domdfcoding/ytools3"
+and can be accessed from the following URL: https://github.com/domdfcoding/ytools3
 
 If you have ``git`` installed, you can clone the repository with the following command:
 
