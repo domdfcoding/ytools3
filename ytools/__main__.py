@@ -14,6 +14,8 @@ from yaml import scanner
 # this package
 from ytools import __version__, dump, optiondefaults, validate
 
+__all__ = ["main"]
+
 
 def main(argv):
 	parser = argparse.ArgumentParser(
