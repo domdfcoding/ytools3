@@ -4,7 +4,7 @@
 """
 Library for validating ``yaml`` files against schema
 and selectively dumping nodes from ``yaml`` (or ``json``) documents in ``yaml`` or ``json`` format.
-"""
+"""  # noqa: 400
 #
 #  Copyright (c) 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 #  Copyright (c) Jakob Stemberger <yaccob@gmx.net>
@@ -114,7 +114,7 @@ def validate(
 def dump(
 		datafile: Union[str, pathlib.Path],
 		path: str = '$',
-		format: str = "yaml",  # pylint: disable=redefined-builtin
+		format: str = "yaml",  # pylint: disable=redefined-builtin  # noqa: A002
 		yaml_options: str = optiondefaults["yaml"],
 		json_options: str = optiondefaults["json"],
 		encoding: str = "utf-8",
