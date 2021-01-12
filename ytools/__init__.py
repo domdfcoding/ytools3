@@ -16,7 +16,7 @@ and selectively dumping nodes from ``yaml`` (or ``json``) documents in ``yaml`` 
 import collections
 import json
 import pathlib
-from typing import Callable, Dict, Iterable, Union
+from typing import Callable, Dict, Iterable, Iterator, Union
 
 # 3rd party
 import jsonschema  # type: ignore
@@ -57,7 +57,7 @@ def orderedDict_constructor(
 		loader: yaml.constructor.SafeConstructor,
 		node,
 		deep: bool = False,
-		) -> collections.OrderedDict:
+		) -> Iterator[collections.OrderedDict]:
 	"""
 	Constructs an :class:`collections.OrderedDict` from a YAML node.
 
@@ -66,7 +66,7 @@ def orderedDict_constructor(
 	:param deep:
 	"""
 
-	data: Dict = collections.OrderedDict()
+	data: collections.OrderedDict = collections.OrderedDict()
 	yield data
 
 	if isinstance(node, yaml.MappingNode):
