@@ -2,7 +2,7 @@
 modname: ytools3
 pypi_name: ytools3
 import_name: ytools
-copyright_years: "2020"
+copyright_years: "2020-2021"
 author: "Dominic Davis-Foster"
 email: "dominic@davis-foster.co.uk"
 version: "3.0.1"
@@ -24,8 +24,6 @@ python_versions:
  - '3.8'
  - '3.9'
  - 'pypy3'
-
-# travis secure password for PyPI
 
 classifiers:
  - 'Development Status :: 4 - Beta'
