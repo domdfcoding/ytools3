@@ -5,7 +5,6 @@ CLI Entry point.
 
 # stdlib
 import argparse
-import optparse
 import pathlib
 import sys
 
@@ -15,12 +14,12 @@ import yaml
 from yaml import scanner
 
 # this package
-from ytools import __version__, dump, optiondefaults, validate
+from ytools import dump, optiondefaults, validate
 
 __all__ = ["main"]
 
 
-def main(argv):
+def main(argv):  # noqa: D103
 	parser = argparse.ArgumentParser(
 			prog=argv[0],
 			description="""\

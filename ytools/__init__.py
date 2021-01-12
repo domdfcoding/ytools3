@@ -6,7 +6,7 @@ Library for validating ``yaml`` files against schema
 and selectively dumping nodes from ``yaml`` (or ``json``) documents in ``yaml`` or ``json`` format.
 """  # noqa: 400
 #
-#  Copyright (c) 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
+#  Copyright (c) 2020-2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 #  Copyright (c) Jakob Stemberger <yaccob@gmx.net>
 #  Apache 2.0 Licensed
 #  See LICENSE for more information
@@ -43,27 +43,27 @@ optiondefaults: Dict[str, str] = {
 
 def dict_constructor(loader: yaml.constructor.SafeConstructor, node) -> Dict:
 	"""
+	Constructs a dictionary from a YAML node.
 
 	:param loader:
 	:param node:
 	:type node:
-
-	:return:
 	"""
 
 	return dict(loader.construct_pairs(node))
 
 
-def orderedDict_constructor(loader: yaml.constructor.SafeConstructor, node, deep: bool = False):
+def orderedDict_constructor(
+		loader: yaml.constructor.SafeConstructor,
+		node,
+		deep: bool = False,
+		) -> collections.OrderedDict:
 	"""
+	Constructs an :class:`collections.OrderedDict` from a YAML node.
 
 	:param loader:
 	:param node:
-	:type node:
 	:param deep:
-
-	:return:
-	:rtype:
 	"""
 
 	data: Dict = collections.OrderedDict()
@@ -87,7 +87,7 @@ def validate(
 		encoding: str = "utf-8",
 		) -> None:
 	"""
-	Validate the given datafiles using a schema
+	Validate the given datafiles using a schema.
 
 	:param schemafile: The ``json`` or ``yaml`` formatted schema to validate with
 	:param datafiles: An iterable of ``json`` or ``yaml`` files to validate
@@ -114,25 +114,20 @@ def validate(
 def dump(
 		datafile: Union[str, pathlib.Path],
 		path: str = '$',
-		format: str = "yaml",  # pylint: disable=redefined-builtin  # noqa: A002
+		format: str = "yaml",  # pylint: disable=redefined-builtin  # noqa: A002  # pylint: disable=redefined-builtin
 		yaml_options: str = optiondefaults["yaml"],
 		json_options: str = optiondefaults["json"],
 		encoding: str = "utf-8",
 		) -> None:
 	"""
+	Load the contents of the given YAML file and output in the desired format.
 
 	:param datafile:
-	:type datafile:
 	:param path:
-	:type path:
 	:param format:
-	:type format:
 	:param yaml_options:
-	:type yaml_options:
 	:param json_options:
-	:type json_options:
 	:param encoding: Encoding to open the files with.
-	:type encoding: str
 	"""
 
 	encoders: Dict[str, Encoder] = {
